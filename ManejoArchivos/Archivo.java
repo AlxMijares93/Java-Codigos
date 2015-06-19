@@ -2,7 +2,6 @@
  * clase para la manipulacion de archivos tanto binarios como 
  * archvios de texto plano
  */
-package Archivos;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
