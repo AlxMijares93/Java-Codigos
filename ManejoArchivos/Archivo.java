@@ -61,6 +61,20 @@ public class Archivo {
     }
     
     //metodo para abrir un archivo binario
+    public void copiarArchivoBinario(String destino) throws FileNotFoundException, IOException{ 
+        
+        File destinyFile = new File(destino);  //archivo copia
+        InputStream in = new FileInputStream(f);  //archivo origen
+        OutputStream out = new FileOutputStream(destinyFile);  //flujo al archivo destino
+
+        byte[] buf = new byte[2048];  //arreglo que servira como buffer
+        int len;    //variable para el tamaño del buffer
+        while ((len = in.read(buf)) > 0) {  
+            out.write(buf, 0, len);  
+        }  
+        in.close();  //cerramos los flujos de entrada
+        out.close();  //cerramos los flujos de salida
+    }
     
     
 }
