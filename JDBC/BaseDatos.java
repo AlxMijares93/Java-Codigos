@@ -29,9 +29,9 @@ public class BaseDatos {
             Class.forName("com.mysql.jdbc.Driver"); // importamos el driver de la base de datos   
             conexion= DriverManager.getConnection(url,user,pass); // creamos la conexion a la base de datos
         }catch(SQLException e){
-            System.out.println("Error de sql");
+            System.out.println("Error de sql:_ "+e.getMessage());
         }catch(ClassNotFoundException ex){
-            System.out.println("No se pudo cargar el driver MySQL");
+            System.out.println("No se pudo cargar el driver MySQL:_"+ex.getMessage());
         }
         
     }
@@ -61,3 +61,4 @@ public class BaseDatos {
     
     
 }
+
