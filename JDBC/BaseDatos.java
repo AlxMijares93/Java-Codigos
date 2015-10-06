@@ -3,7 +3,6 @@
  * 
  */
 
-package Ejemplo1;
 
 import java.sql.*;
 
