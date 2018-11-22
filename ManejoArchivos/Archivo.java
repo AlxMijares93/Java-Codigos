@@ -1,6 +1,7 @@
 /*
  * clase para la manipulacion de archivos tanto binarios como 
  * archvios de texto plano
+ *linea nueva a mi código
  */
 
 import java.io.BufferedReader;
